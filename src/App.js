@@ -1,23 +1,45 @@
 import logo from './logo.svg';
 import './App.css';
+import { BarChartRounded, DashboardRounded, TocRounded } from '@mui/icons-material';
+import Item from './components/Item';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='sidebar-container'>
+        <div className='sidebar'>
+          <div className='line-icon'>
+            <TocRounded />
+          </div>
+          <div className='profile'>
+            <img src="https://images.freeimages.com/images/large-previews/7be/vector-4-1147260.jpg" alt='profile-img'></img>
+          </div>
+          <div className='groups'>
+            <div className='group'>
+              <h3>Analytics</h3>
+              <Item icon={<DashboardRounded />} name='Dashboard' />
+              <Item icon={<BarChartRounded />} name='Performance' />
+            </div>
+            <div className='group'>
+              <h3>Analytics</h3>
+              <Item icon={<DashboardRounded />} name='Dashboard' />
+              <Item icon={<BarChartRounded />} name='Performance' />
+            </div>
+            <div className='group'>
+              <h3>Analytics</h3>
+              <Item icon={<DashboardRounded />} name='Dashboard' />
+              <Item icon={<BarChartRounded />} name='Performance' />
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+      <div className='body-container'>body</div>
     </div>
   );
 }

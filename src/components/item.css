@@ -1,0 +1,15 @@
+.item{
+    display: flex;
+    padding: 6px 10px 6px;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+.icon{
+    margin-right: 0.5rem;
+    margin-top: 6px;
+}
+.item:hover{
+    background: lightpink; /* make this whatever you want */
+    border-radius: 5px;
+}
