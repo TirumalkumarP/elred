@@ -36,10 +36,11 @@ function SideMenu() {
                         </div>
                     </div>
                     <div className='need-help'>
-                        <div><HelpIcon /></div>
-                        <h5> Need Help ?</h5>
-                        <h6>Our support team is at your disposal</h6> 
-                        <button type='button' >Get Help</button>
+                        <div className='help-icon'><HelpIcon /></div>
+                        <div className='ms-5'>Need Help ?</div>
+                        <div className='ms-3'>Our support team is </div>
+                        <div className='ms-4'>at your disposal</div>
+                        <button type='button' className='help-button'>Get Help</button>
                     </div>
                 </div>
             </div>

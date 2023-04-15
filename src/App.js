@@ -1,10 +1,16 @@
 import './App.css';
 import SideMenu from './components/SideMenu';
+import Body from './components/Body';
+import NavBar from './components/NavBar';
 function App() {
   return (
     <div className="App">
-      <SideMenu/>
-      <div className='body-container'>body</div>
+      <div className='nav-bar'>
+
+      <NavBar/>
+      </div>
+      <div><SideMenu/></div>
+      <div><Body/></div>
     </div>
   );
 }
